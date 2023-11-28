@@ -46,7 +46,7 @@ public class MovieRepo {
         try {
             statement = connection.createStatement();
             resultSet = statement.executeQuery(query);
-            while (resultSet.next()) {
+            if (resultSet.next()) {
                 movie = new Movie();
                 movie.setId(id);
                 movie.setTitle(resultSet.getString("title"));

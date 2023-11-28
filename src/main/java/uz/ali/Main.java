@@ -15,8 +15,8 @@ public class Main {
         allMovies.forEach(System.out::println);*/
 
         // get a movie by Id
-  /*      Movie movieById = movieRepo.getMovieById(3);
-        System.out.println(movieById == null ? "Siz kiritgan id lik movie topilmadi" : movieById);*/
+        Movie movieById = movieRepo.getMovieById(33);
+        System.out.println(movieById == null ? "Siz kiritgan id lik movie topilmadi" : movieById);
 
         // Insert a movie
         /*Integer insertMovie = movieRepo.insertMovie(new Movie("Beee",
@@ -30,7 +30,7 @@ public class Main {
         System.out.println(updatedMovie.equals(0) ? "Not Updated" : "Updated");*/
 
         // Delete a movie by ID
-        System.out.println(movieRepo.deleteMovieById(15));
+//        System.out.println(movieRepo.deleteMovieById(15));
 
     }
 }
